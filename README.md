@@ -18,31 +18,7 @@ Se você está começando a estudar agora, dê uma olhada nestas ferramentas. El
 *   **[Lenis](https://lenis.darkroom.engineering/):** Uma biblioteca mágica feita em JavaScript que transforma a rolagem da página (scroll) de algo "seco" e travado para algo suave e amanteigado (smooth scroll).
 *   **JavaScript (ES6+):** Usamos JS puro (Vanilla) para controlar os eventos da página (como capturar quando o usuário faz scroll para animar os elementos aparecendo na tela usando o `IntersectionObserver`).
 
----
 
-## 🚀 Como foi construído? (Arquitetura e Decisões)
-
-Para você que está aprendendo, aqui vão alguns "segredos" de como estruturamos esse projeto:
-
-### 1. Separação de Responsabilidades
-Em vez de jogar tudo num buraco só, organizamos assim:
-*   `index.html`: Fica com o "esqueleto" do site (os textos, as divs, as imagens).
-*   `src/style.css`: Guarda coisas globais, como fontes, a paleta de cores (usando variáveis CSS como `--color-brand-amber`) e animações chaves (keyframes).
-*   `src/main.js`: Apenas a lógica interativa (o listener de scroll, a inicialização do Lenis e o Intersection Observer que faz os textos irem brotando na tela).
-
-### 2. Imagens Táticas (Z-Index e Posição Absoluta)
-Na primeira seção (Hero), ensinamos o CSS a sobrepor imagens. Usamos `position: relative` e `absolute`, combinados com o `z-index`. Isso permitiu colocar a "Mulher Sorrindo" na *frente* dos "Cards Flutuantes", criando um efeito 3D muito bacana.
-
-### 3. Clean Code (Código Limpo)
-Durante o desenvolvimento, percebemos que muita coisa não estava sendo usada (como links no cabeçalho e menu de celular). 
-**Lição de ouro:** *Menos código é sempre melhor.* Deletamos todo o HTML, CSS e JS que não servia mais. Isso facilita a leitura por outros programadores e previne bugs.
-
-### 4. Performance Extrema ⚡
-Acho que a parte mais legal do que fizemos aqui foi otimizar o site para ele abrir rápido como um raio:
-*   **Lazy Loading:** Adicionamos `loading="lazy"` nas imagens que ficam lá pra baixo no site. Significa que o navegador só baixa essas fotos *se* o usuário começar a rolar a tela, economizando megabytes de dados.
-*   **Preloading de Vídeo:** Como usamos um vídeo de fundo logo de cara, colocamos no `<head>` um `<link rel="preload" as="video">`. Isso avisa pro navegador: *"Ei, pare tudo e baixe esse vídeo primeiro porque ele é a coisa mais importante!"*. Isso melhora muito uma métrica do Google chamada **LCP (Largest Contentful Paint)**.
-
----
 
 ## 💻 Como rodar esse projeto na sua máquina?
 
