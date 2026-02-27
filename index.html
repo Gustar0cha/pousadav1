@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Laviagens — Descubra o Mundo de Forma Inteligente</title>
+  <meta name="description"
+    content="A plataforma de turismo mais inteligente do Brasil. Planejamento personalizado, ofertas exclusivas e suporte 24h para a sua próxima aventura." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="preload" as="video" href="/video de fundo da hero.mp4" type="video/mp4" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+
+<body class="bg-white">
+
+  <!-- Mobile menu removed since we only have the CTA button now -->
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar">
+    <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+      <a href="/" class="nav-logo flex items-center gap-2 font-bold text-xl text-gray-900 no-underline">
+        <img src="/logo.png" alt="Laviagens" class="h-10 w-auto" />
+      </a>
+      <div class="flex items-center gap-3">
+        <a href="https://wa.me/5500000000000" target="_blank"
+          class="flex items-center gap-2 bg-white text-gray-900 border border-gray-200 hover:bg-gray-50 hover:border-gray-300 font-semibold rounded-full shadow-sm transition-all duration-300"
+          style="padding:10px 24px; font-size:0.9rem;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" />
+            <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1" />
+          </svg>
+          Fale Conosco
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="min-h-screen relative overflow-hidden flex items-center pt-20">
+
+    <!-- Video Background Container -->
+    <div class="absolute inset-0 z-0 w-full h-full overflow-hidden">
+      <video autoplay loop muted playsinline class="w-full h-full object-cover">
+        <source src="/video de fundo da hero.mp4" type="video/mp4">
+      </video>
+      <!-- Opacity Overlay (adjust opacity value to make darker/lighter) -->
+      <div class="absolute inset-0 bg-white/40 mix-blend-overlay"></div>
+      <div class="absolute inset-0 bg-white/70"></div>
+
+      <!-- Gradient transition to section below (white fade) -->
+      <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-white to-transparent"></div>
+    </div>
+
+    <!-- Background blobs (optional above video) -->
+    <div class="absolute -top-32 -right-32 w-[600px] h-[600px] rounded-full opacity-[0.10] z-0 pointer-events-none"
+      style="background:radial-gradient(circle, #F29F05, transparent 70%);"></div>
+    <div class="absolute -bottom-32 -left-32 w-[500px] h-[500px] rounded-full opacity-[0.08] z-0 pointer-events-none"
+      style="background:radial-gradient(circle, #A65221, transparent 70%);"></div>
+
+    <div class="max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-16 items-center w-full relative z-10">
+      <!-- Left: Text -->
+      <div>
+        <!-- Badge removed -->
+        <h1
+          class="text-5xl lg:text-6xl xl:text-7xl font-black leading-[1.05] tracking-tight text-gray-900 mt-4 mb-6 reveal reveal-delay-1">
+          Descubra o mundo de forma
+          <span class="text-gradient-blue-purple block">inteligente</span>
+        </h1>
+        <p class="text-xl text-gray-500 leading-relaxed mb-10 max-w-lg reveal reveal-delay-2">
+          Planejamento personalizado, ofertas exclusivas e suporte dedicado para transformar cada viagem em uma
+          experiência inesquecível.
+        </p>
+
+        <!-- Lower components (search, cta, stats) removed as requested -->
+      </div>
+
+      <!-- Right: Hero Images -->
+      <div
+        class="relative reveal reveal-delay-2 flex items-center justify-center lg:justify-end gap-0 mr-4 mt-8 lg:mt-0 xl:-mr-16">
+        <!-- Main Woman Image (In Front) -->
+        <div class="relative z-30 w-[120%] max-w-[750px] -mr-[15%]">
+          <img src="/imagem mulher hero.png" alt="Viajante aproveitando as férias"
+            class="w-full h-auto drop-shadow-2xl hover:scale-[1.02] transition-transform duration-500" />
+        </div>
+
+        <!-- Info Cards (Behind) -->
+        <div class="relative z-20 w-[65%] max-w-[420px] -ml-[10%] mt-[10%] drop-shadow-xl">
+          <img src="/cards inicio completo.png" alt="Informações sobre garagem, wifi e pet friendly"
+            class="w-full h-auto hover:scale-[1.05] transition-transform duration-500" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PACOTES SECTION ===== -->
+  <section id="pacotes" class="pt-10 pb-12 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-6">
+        <h2 class="text-4xl lg:text-5xl font-black text-gray-900 mt-2 mb-2 reveal reveal-delay-1">
+          Pronta para sua <span class="text-gradient-orange">próxima aventura?</span>
+        </h2>
+        <p class="text-lg text-gray-500 max-w-xl mx-auto reveal reveal-delay-2">
+          Deixe a organização com a gente e foque apenas em aproveitar cada momento da sua viagem.
+        </p>
+      </div>
+
+      <div
+        class="relative w-full max-w-5xl mx-auto reveal reveal-delay-2 flex flex-col items-center justify-center mt-4">
+        <!-- Suitcase Group Centered -->
+        <div class="relative w-full max-w-[850px] flex items-center justify-center">
+          <img src="./components/Componentes da mala.png" alt="" class="relative z-0 w-[95%] h-auto md:w-[850px]"
+            style="pointer-events: none;" />
+          <div class="absolute z-10 w-[60%] h-auto md:w-[450px] cursor-pointer" style="transform: translateY(2%);">
+            <img src="./components/mala.png" alt="Mala de viagem"
+              class="w-full h-auto drop-shadow-2xl transition-transform duration-500 ease-out hover:-translate-y-4 hover:scale-[1.03]" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== QUARTOS SECTION ===== -->
+  <section id="quartos" class="py-12 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-10">
+        <h2 class="text-4xl lg:text-5xl font-black text-gray-900 mt-4 mb-4 reveal reveal-delay-1">
+          Quartos <span class="text-gradient-blue-purple">pensados para você</span>
+        </h2>
+        <p class="text-lg text-gray-500 max-w-xl mx-auto reveal reveal-delay-2">
+          Conforto, elegância e comodidades premium para tornar cada noite uma experiência inesquecível.
+        </p>
+      </div>
+      <div
+        class="relative w-full max-w-5xl mx-auto min-h-[400px] reveal reveal-delay-3 quartos-container flex flex-col md:flex-row items-center justify-center gap-12 mt-8">
+
+        <!-- Main Room Card -->
+        <div class="relative z-10 w-full max-w-md transition-transform duration-500 hover:scale-105">
+          <img src="./components/Quarto deluxe card.png" alt="Quarto Deluxe com Café da Manhã"
+            class="w-full h-auto filter drop-shadow-2xl" loading="lazy" decoding="async" />
+        </div>
+
+        <!-- Info Card -->
+        <div class="relative z-10 w-full max-w-sm transition-transform duration-500 hover:-translate-y-4">
+          <img src="./components/Informações do quarto.png" alt="Mais de 100 opções de acomodações"
+            class="w-full h-auto filter drop-shadow-xl" loading="lazy" decoding="async" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CAFÉ DA MANHÃ SECTION ===== -->
+  <section id="cafe" class="cafe-section pt-24 relative overflow-visible">
+    <!-- Background from the bottom up -->
+    <div class="absolute z-0 w-full bottom-0 left-0 h-[65%] md:h-[70%] pointer-events-none">
+      <img src="/fundo cafe.png" alt="" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 relative z-10 pb-24">
+      <div class="text-center mb-14">
+        <h2 class="text-4xl lg:text-5xl font-black mt-4 mb-4 reveal reveal-delay-1" style="color:#0D0D0D;">
+          Comece o dia com o <span class="cafe-text-highlight">melhor sabor</span>
+        </h2>
+        <p class="text-lg text-gray-500 max-w-xl mx-auto reveal reveal-delay-2">
+          Café da manhã completo e sofisticado incluso nos nossos pacotes selecionados.
+        </p>
+      </div>
+      <div class="flex justify-center reveal reveal-delay-3">
+        <img src="/completo cafe.png" alt="Café da manhã incluso nos pacotes" class="cafe-img drop-shadow-2xl" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PETS SECTION ===== -->
+  <section id="pets" class="pets-section py-24" style="background-color: #F29F05;">
+    <div class="max-w-7xl mx-auto px-6 overflow-hidden">
+      <div class="flex justify-center reveal">
+        <img src="./completo pets.png" alt="Informações sobre pacotes Pet Friendly"
+          class="w-full max-w-[900px] h-auto filter drop-shadow-xl hover:scale-[1.01] transition-transform duration-500"
+          loading="lazy" decoding="async" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer style="background:#0D0D0D;" class="text-gray-400 py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        <div class="lg:col-span-2">
+          <a href="/" class="flex items-center gap-2 no-underline mb-4">
+            <img src="/logo.png" alt="Laviagens" class="h-10 w-auto" />
+          </a>
+          <p class="text-sm leading-relaxed text-gray-500 max-w-xs mb-6">A plataforma de turismo mais inteligente do
+            Brasil. Descubra o mundo com planejamento, tecnologia e paixão.</p>
+          <div class="flex gap-3">
+            <a href="https://www.linkedin.com/in/devgustavorocha/" target="_blank"
+              class="w-9 h-9 rounded-xl bg-gray-800 flex items-center justify-center transition-colors"
+              onmouseenter="this.style.background='#F29F05'" onmouseleave="this.style.background='#1F2937'"
+              aria-label="LinkedIn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+                stroke-linecap="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-sm text-gray-600">© 2026 Laviagens. Todos os direitos reservados.</p>
+        <p class="text-sm text-gray-600">
+          Desenvolvido por <a href="https://www.linkedin.com/in/devgustavorocha/" target="_blank"
+            class="text-[#F29F05] hover:text-[#A65221] font-semibold transition-colors">Gustavo</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Smooth Scrolling Library -->
+  <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
